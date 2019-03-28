@@ -1,0 +1,12 @@
+pluginManagement {
+	repositories {
+		gradlePluginPortal()
+	}
+}
+rootProject.name = 'fj36-ms'
+include 'books'
+include 'authors'
+include 'service-discovery'
+include 'api-gateway'
+include 'config-server'
+

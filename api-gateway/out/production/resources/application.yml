@@ -1,0 +1,11 @@
+eureka:
+  client:
+    register-with-eureka: false
+zuul:
+  routes:
+    movies:
+      path: /books/**
+      serviceId: books
+    theater:
+      path: /authors/**
+      serviceId: authors
