@@ -2,15 +2,15 @@ package br.com.caelum.ms.creation;
 
 import static org.springframework.http.ResponseEntity.created;
 
+import br.com.caelum.ms.AuthorsController;
 import java.net.URI;
 import javax.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-@RestController
+@AuthorsController
 public class AuthorCreationController {
 
     private final AuthorCreationService service;

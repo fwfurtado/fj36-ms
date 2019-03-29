@@ -3,9 +3,14 @@ eureka:
     register-with-eureka: false
 zuul:
   routes:
-    movies:
+    books:
+      strip-prefix: false
       path: /books/**
       serviceId: books
-    theater:
+    authors:
+      strip-prefix: false
       path: /authors/**
       serviceId: authors
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 10000

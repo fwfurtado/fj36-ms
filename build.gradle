@@ -19,6 +19,7 @@ subprojects {
 	version = rootProject.version
 
 	repositories {
+		jcenter()
 		mavenCentral()
 		mavenLocal()
 	}

@@ -3,12 +3,12 @@ package br.com.caelum.ms.list;
 import static org.springframework.http.ResponseEntity.notFound;
 import static org.springframework.http.ResponseEntity.ok;
 
+import br.com.caelum.ms.AuthorsController;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@AuthorsController
 class ListAuthorController {
 
     private final ListAuthorRepository repository;
